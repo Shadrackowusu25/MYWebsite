@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    padding-left: 3%;
+    padding-right: 8%;
+    filter: blur();
+}
+
+.background-image {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    background: linear-gradient(45deg, rgb(211, 147, 173), #3b964c, rgb(185, 100, 134));
+    padding-left: 0%;
+    padding-right: 0%;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.logo {
+    width: 10%; /* Adjust as needed */
+    cursor: pointer;
+}
+
+.navbar {
+    text-align: center;
+    flex: 1;
+}
+
+.navbar a {
+    padding: 6px 2%; /* Adjust as needed */
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 2vw; /* Adjust as needed */
+    font-weight: bold;
+}
+
+.btn {
+    cursor: pointer;
+    letter-spacing: 2px;
+    font-size: 1.5vw; /* Adjust as needed */
+    padding: 1.5% 5%; /* Adjust as needed */
+    border: 0px solid #000000;
+    box-shadow: 0 0 0.5vw rgb(161, 253, 253), 0 0 2.5vw rgb(161, 253, 253);
+    background: rgb(161, 253, 253);
+    text-align: center;
+    font-weight: bold;
+    margin: 2% 2%; /* Adjust as needed */
+}
+
+.content {
+    text-align: center;
+    margin-top: 10%; /* Adjust as needed */
+}
+
+.content h1 {
+    font-size: 5vw; /* Adjust as needed */
+    color: hsl(0, 0%, 0%);
+}
+
+.content h5 {
+    font-size: 1.5vw; /* Adjust as needed */
+    color: hsl(180, 100%, 50%);
+}
+
+.footer {
+    background: #98c1d9;
+    padding: 1%;
+    border-radius: 2vw;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar-left,
+.sidebar-right {
+    display: none; /* Hide sidebars on smaller screens */
+}
+
+@media only screen and (min-width: 768px) {
+    .sidebar-left,
+    .sidebar-right {
+        display: block; /* Show sidebars on larger screens */
+    }
+}

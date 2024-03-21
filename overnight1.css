@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url('aerial-view-cargo-ship-cargo-container-harbor.jpg');
+    background-size: cover; /* or contain */
+    background-size: 100vw 100vh;
+}
+
+.container{
+    width: 100;
+    height: 100;
+    padding-left: 3%;
+    padding-right: 8%;
+    filter: blur();
+
+}
+/*.background-image{
+    object-fit: fit;
+    width: 9mm;
+    height: 9mm;
+    display: flex;
+    background: linear-gradient(45deg, rgb(211, 147, 173), #3b964c, rgb(185, 100, 134));
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 0%;
+    padding-right: 0%;
+}*/
+@media screen and (max-width: 768px) {
+    body {
+        background-size: contain;
+    }
+}
+.header{
+    height: 15;
+    display: flex;
+    align-items: center;
+    overflow:hidden;
+    position: relative;
+}
+.logo{
+    width: 80px;
+    cursor: pointer;
+}
+.navbar{
+    text-align: center;
+    flex: 1;
+
+}
+.navbar a{
+    padding: 6px 20px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.btn{
+    cursor: pointer;
+   /* color: #cc0052;*/
+    letter-spacing: 2px;
+    font-size: 18px;
+    padding: 10px 30px;
+    border: 0px solid #000000;
+    box-shadow: 0 0 5px rgb(161, 253, 253) , 0 0 25px rgb(161, 253, 253);
+    background: rgb(161, 253, 253);
+    text-align: center;
+    font-weight: bold;
+    margin: 10px 10px;
+}
+
+.btn:hover{
+    color: #f7f7f7;
+    box-shadow:  0 0 5px rgba(161, 253, 253, 0), 0 0 25px rgba(161, 253, 253, 0), 0 0 50px rgba(161, 253, 253, 0);
+    background: linear-gradient(45deg, rgb(161, 253, 253), rgb(161, 253, 253));
+}
+.btn a:hover{
+    color: #793939;
+    
+}
+.btn a:visited{
+    color: rgb(0, 0, 0);
+    
+}
+.btn:link{
+    text-decoration: none;
+    background-color: rgb(0, 0, 0);
+}
+
+.content {
+    text-align: center;
+    margin-top: 12%;
+}
+.content h1 {
+    font-size: 150px;
+   color: hsl(0, 2%, 16%);
+   box-shadow:  0 0 5px rgba(255, 255, 255, 0.085), 0 0 25px rgba(255, 255, 255, 0.062), 0 0 50px rgb(255, 255, 255);
+   
+}
+   /* color-scheme: linear-gradient(45deg, rgb(211, 147, 173), #3b964c, rgb(185, 100, 134));*/
+
+.content h5 {
+    font-size: 30px;
+    color: hsl(180, 100%, 50%);
+}
+.footer {
+    background: #98c1d9;
+    height: 313px;
+    width: 1150px;
+    padding-left: 1%;
+    margin-top: 190px;
+    border-radius: 20px 20px 0 0 ;
+    position: flex;
+    margin-right: 300px;
+    margin-bottom: 50px;
+    /*box-shadow: 6px 6px 6px 6px rgb(138, 164, 202);*/
+    align-items: center;
+    display: flex;
+}
+.sidebar-left{
+ 
+    display: outside-container;
+    background: rgb(126, 173, 215);
+    height: 250px;
+    width: 600px; 
+    padding: 0;
+    /*box-shadow: 6px 6px 4px 1.5px rgb(138, 164, 202);*/
+    border-radius: 20px;
+    position: absolute;
+    margin-bottom: -3px;
+    margin-right: -300px;
+    margin-left: 40px;
+    backdrop-filter: blur(5px);
+    display: flex;
+}
+.sidebar-left h4 {
+    text-transform: uppercase ,capitalize;
+    text-align: center;
+    font-display: auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 5px 40px 10px 261px;
+    position: absolute;
+}
+.sidebar-left h5{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 56px 50px 0px 50px;
+    position: relative;
+}
+
+.sidebar-right{
+    
+    display: outside;
+    background-color: rgb(126, 173, 15);
+    height: 250px;
+    width: 400px; 
+    padding: 0;
+    /*box-shadow: 6px 6px 4px 1.5px rgb(138, 164, 202);*/
+    border-radius: 20px;
+    position: absolute;
+    margin-bottom: -3px;
+    margin-left: 700px;
+    display: flex;
+}
+.sidebar-left h4 {
+    text-transform: uppercase ,capitalize;
+    text-align: center;
+    font-display: auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 5px 40px 10px 261px;
+    position: absolute;
+}
+.sidebar-right h4{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 1px 34px 23px 0px;
+    position: absolute;
+}
+.form{
+    position: absolute;
+    margin-right: 400px !important;
+
+}
+.form.login {
+    position: absolute;
+    left: 50%;
+    bottom: -86%;
+    transform: translateX(
+      -50%
+    );
+    width: calc(
+      100% +
+        220px
+    );
+    padding: 20px
+      140px;
+    border-radius: 50%;
+    height: 100%;
+    background: #fff;
+    transition: all
+      0.6s
+      ease;
+  }
+  .sidebar-left,
+.sidebar-right {
+    display: none; /* Hide sidebars on smaller screens */
+}
+
+@media only screen and (min-width: 768px) {
+    .sidebar-left,
+    .sidebar-right {
+        display: block; /* Show sidebars on larger screens */
+    }
+}
